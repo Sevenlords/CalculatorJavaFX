@@ -2,15 +2,15 @@ package calculator.model;
 
 public class MainModel {
 
-    double calculated(double a, double b, String value) {
+    public double calculated(double a, double b, String value) {
         switch (value) {
             case "+":
                 return a + b;
             case "-":
                 return a - b;
-            case "*":
+            case "×":
                 return a * b;
-            case "/":
+            case "÷":
                 return a / b;
             case "x^y":
                 return Math.pow(a,b);
@@ -19,7 +19,7 @@ public class MainModel {
         }
     }
 
-    double calculated(double a, String value) {
+    public double calculated(double a, String value) {
         switch (value) {
             case "√":
                 return Math.sqrt(a);
@@ -30,7 +30,7 @@ public class MainModel {
         }
     }
 
-    double percent(double a, double b, String value) {
+    public double percent(double a, double b, String value) {
         switch (value) {
             case "+":
                 return a + (b / 100 * a);
