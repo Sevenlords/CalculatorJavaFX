@@ -20,7 +20,7 @@ public class MainController {
     private boolean start = true;
     private double dResult;
 
-    //
+    //Method for buttons with numbers
     @FXML
     private void pressNum(ActionEvent event) {
         if (start) {
@@ -31,7 +31,7 @@ public class MainController {
         numField.setText(numField.getText().concat(value));
     }
 
-    //
+    //Method for action buttons
     @FXML
     private void pressOperation(ActionEvent event) {
 
@@ -66,7 +66,7 @@ public class MainController {
         start = true;
     }
 
-    //Reformat result from double to string and set to TextField
+    //Changing result from double to string and set to TextField
     private void goToNumField(double res) {
         String sRes = String.valueOf(res);
 
@@ -75,7 +75,7 @@ public class MainController {
         } else numField.setText(sRes);
     }
 
-    //Method to reform number
+    //Method to do action on the field
     @FXML
     private void ActionOnTheField(ActionEvent event) {
         String value = ((Button) event.getSource()).getText();
