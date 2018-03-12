@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
         primaryStage.setTitle("Calculator");
         primaryStage.setScene(new Scene(root));

@@ -13,7 +13,7 @@ public class MainModel {
             case "÷":
                 return a / b;
             case "x^y":
-                return Math.pow(a,b);
+                return Math.pow(a, b);
             default:
                 return 0.0;
         }
